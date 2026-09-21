@@ -14,7 +14,7 @@ Loops are control structures used to repeat a block of code. Python supports two
 ```python
 # For loop with range
 for i in range(3):
-    print(i) # 0, 1, 2
+    print(i) # 0, 1, 2, 3
 
 # While loop
 count = 0
