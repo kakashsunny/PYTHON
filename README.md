@@ -1,189 +1,213 @@
-<div align="center">
+# MongoDB Learning Journey 📚
 
-# 🐍 Python Notes by Sunny
+A comprehensive 30-day MongoDB learning series with daily notes, code examples, and best practices.
 
-### From Zero to Advanced — A Complete Python Learning Curriculum
+## 📖 Contents
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
-![Made with](https://img.shields.io/badge/Made%20with-%E2%9D%A4%EF%B8%8F-red?style=for-the-badge)
+This repository contains 30 days of MongoDB learning materials:
 
-*A structured, topic-by-topic curriculum with theory, runnable examples, and practice questions for every stage of Python — basics to advanced.*
+### **Week 1: Fundamentals (Days 1-7)**
+- Day 1: Introduction & Setup
+- Day 2: CRUD Operations
+- Day 3: Query Operators
+- Day 4: Indexing
+- Day 5: Update Operations
+- Day 6: Array Operations
+- Day 7: Projection
 
-[Getting Started](#-getting-started) •
-[Roadmap](#-roadmap--syllabus) •
-[Structure](#-repository-structure) •
-[How to Use](#-how-to-use-this-repository) •
-[Contributing](#-contributing)
+### **Week 2: Advanced Queries (Days 8-14)**
+- Day 8: Sorting & Limiting
+- Day 9: Aggregation Pipeline Intro
+- Day 10: Text Search
+- Day 11: Schema Validation
+- Day 12: Transactions
+- Day 13: Bulk Operations
+- Day 14: Geospatial Queries
 
-</div>
+### **Week 3: Production Features (Days 15-21)**
+- Day 15: Replication
+- Day 16: Sharding
+- Day 17: Backup & Restore
+- Day 18: Monitoring & Profiling
+- Day 19: Change Streams
+- Day 20: Aggregation $group Stage
+- Day 21: Aggregation $lookup (Joins)
 
----
+### **Week 4: Optimization & Best Practices (Days 22-30)**
+- Day 22: Data Modeling
+- Day 23: TTL Indexes
+- Day 24: Compound Indexes
+- Day 25: Connection Pooling
+- Day 26: Write Concerns
+- Day 27: Read Preferences
+- Day 28: Collations
+- Day 29: Aggregation $facet Stage
+- Day 30: Performance Optimization Summary
 
-## 📖 About
+## 📁 Directory Structure
 
-This repository is my personal, ongoing **Python learning curriculum** — built topic by topic as I go from the fundamentals to advanced concepts.
+```
+mongodb-notes/
+├── notes/                          # Daily markdown notes
+│   ├── daily-001.md
+│   ├── daily-002.md
+│   ├── ...
+│   └── daily-030.md
+├── .github/
+│   └── workflows/
+│       └── daily-commit.yml        # GitHub Actions workflow
+├── README.md                       # This file
+└── .gitignore
+```
 
-Every topic gets its own folder containing:
-1. **`README.md`** — theory, syntax, definitions, best practices, common mistakes, and interview tips
-2. **`examples.py`** — runnable code examples and practice exercises, fully commented
-3. **`questions_answers.md`** — MCQs, coding questions, and common interview/exam questions with solutions
+## ✨ Features
 
-Whether you're a beginner or brushing up on advanced topics, feel free to explore, fork, or contribute.
-
----
+- 📅 30 days of structured MongoDB learning
+- 💻 Practical code examples in each note
+- 🔍 Real-world use cases and patterns
+- 📊 Performance optimization techniques
+- 🚀 Production-ready best practices
+- ⚙️ Automated daily commits via GitHub Actions
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- Python 3.10 or higher installed → [Download here](https://www.python.org/downloads/)
-- A code editor (VS Code recommended)
-- Basic familiarity with the command line
-
-### Clone the repository
+### Local Setup
 
 ```bash
-git clone https://github.com/sunny/python-notes.git
-cd python-notes
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/mongodb-notes.git
+cd mongodb-notes
+
+# View the notes
+cat notes/daily-001.md
+
+# Start from Day 1 and progress through the series
 ```
 
-### Run any example
+### Automated Daily Updates
+
+This repository uses GitHub Actions to automatically create daily note templates at 9:00 AM UTC.
+
+**To customize the schedule**, edit `.github/workflows/daily-commit.yml`:
+
+```yaml
+- cron: '0 9 * * *'  # Change the time here
+```
+
+**Common cron times:**
+- `0 9 * * *` = 9:00 AM UTC
+- `0 15 * * *` = 3:00 PM UTC
+- `0 0 * * *` = Midnight UTC
+- `0 */6 * * *` = Every 6 hours
+
+### Manual Trigger
+
+You can manually trigger a daily note creation from the **Actions** tab on GitHub.
+
+## 📚 How to Use This Repository
+
+1. **Read the notes** in order from Day 1 to Day 30
+2. **Practice the queries** in your MongoDB instance
+3. **Experiment** with the code examples
+4. **Build projects** using the patterns learned
+5. **Update the notes** with your own learnings
+
+## 💡 Adding Your Own Notes
+
+Edit any day's note to add your learnings:
+
+```markdown
+# MongoDB Notes - Day 1
+
+## Today's Learning
+- MongoDB basics
+- My additional insight here
+
+## Queries Tested
+- Original query
+- My test query
+
+## Issues Encountered
+- My specific issues
+
+## Resources
+- My resource links
+
+## Notes
+✨ My observations
+```
+
+Then commit and push:
 
 ```bash
-python 01_basics/01_variables_data_types/examples.py
+git add notes/
+git commit -m "Updated Day 1 with personal learnings"
+git push origin main
 ```
 
----
+## 🔧 Technologies Used
 
-## 🗺️ Roadmap & Syllabus
+- **MongoDB** - Document database
+- **Node.js** - JavaScript runtime
+- **Git** - Version control
+- **GitHub Actions** - CI/CD automation
+- **Markdown** - Documentation
 
-### 🟢 Basics
-1. [Variables & Data Types](01_basics/01_variables_data_types/)
-2. [Operators](01_basics/02_operators/)
-3. [Strings & Formatting](01_basics/03_strings_formatting/)
-4. [Conditionals](01_basics/04_conditionals/)
-5. [Loops](01_basics/05_loops/)
-6. [Lists, Tuples, Sets](01_basics/06_lists_tuples_sets/)
-7. [Dictionaries](01_basics/07_dictionaries/)
-8. [Functions](01_basics/08_functions/)
-9. [Input/Output](01_basics/09_input_output/)
+## 📈 Learning Path
 
-### 🟡 Intermediate
-10. [File Handling](02_intermediate/10_file_handling/)
-11. [Exception Handling](02_intermediate/11_exception_handling/)
-12. [Modules & Packages](02_intermediate/12_modules_packages/)
-13. [List/Dict Comprehensions](02_intermediate/13_list_dict_comprehensions/)
-14. [Object-Oriented Programming](02_intermediate/14_object_oriented_programming/)
-15. [Lambda, Map, Filter, Reduce](02_intermediate/15_lambda_map_filter_reduce/)
-16. [Regular Expressions](02_intermediate/16_regular_expressions/)
-17. [Virtual Environments](02_intermediate/17_virtual_environments/)
-18. [Working with APIs](02_intermediate/18_working_with_apis/)
-
-### 🔴 Advanced
-19. [Decorators](03_advanced/19_decorators/)
-20. [Generators & Iterators](03_advanced/20_generators_iterators/)
-21. [Context Managers](03_advanced/21_context_managers/)
-22. [Multithreading & Multiprocessing](03_advanced/22_multithreading_multiprocessing/)
-23. [Async/Await](03_advanced/23_async_await/)
-24. [Design Patterns](03_advanced/24_design_patterns/)
-25. [Testing (unittest/pytest)](03_advanced/25_testing_unittest_pytest/)
-26. [Type Hinting](03_advanced/26_type_hinting/)
-27. [Packaging & Distribution](03_advanced/27_packaging_distribution/)
-
----
-
-## 📂 Repository Structure
-
-```
-python-notes/
-│
-├── 01_basics/
-│   ├── 01_variables_data_types/
-│   │   ├── README.md
-│   │   ├── examples.py
-│   │   └── questions_answers.md
-│   ├── 02_operators/
-│   ├── 03_strings_formatting/
-│   ├── 04_conditionals/
-│   ├── 05_loops/
-│   ├── 06_lists_tuples_sets/
-│   ├── 07_dictionaries/
-│   ├── 08_functions/
-│   └── 09_input_output/
-│
-├── 02_intermediate/
-│   ├── 10_file_handling/
-│   ├── 11_exception_handling/
-│   ├── 12_modules_packages/
-│   ├── 13_list_dict_comprehensions/
-│   ├── 14_object_oriented_programming/
-│   ├── 15_lambda_map_filter_reduce/
-│   ├── 16_regular_expressions/
-│   ├── 17_virtual_environments/
-│   └── 18_working_with_apis/
-│
-├── 03_advanced/
-│   ├── 19_decorators/
-│   ├── 20_generators_iterators/
-│   ├── 21_context_managers/
-│   ├── 22_multithreading_multiprocessing/
-│   ├── 23_async_await/
-│   ├── 24_design_patterns/
-│   ├── 25_testing_unittest_pytest/
-│   ├── 26_type_hinting/
-│   └── 27_packaging_distribution/
-│
-├── projects/
-│   └── mini-projects for applied practice
-│
-└── README.md
-```
-
-> Each numbered topic folder follows the same three-file pattern shown above (`README.md`, `examples.py`, `questions_answers.md`).
-
----
-
-## 📘 How to Use This Repository
-
-1. **Read the theory** — open a topic's `README.md` for explanations, syntax, best practices, and common mistakes.
-2. **Explore the code** — run and modify `examples.py` to see the concept in action and test your own variations.
-3. **Practice & test** — work through `questions_answers.md` for MCQs, interview questions, and coding exercises with solutions.
-
----
-
-## ✅ Progress Tracker
-
-| Topic Level     | Status         |
-|------------------|----------------|
-| Basics           | ✅ Completed    |
-| Intermediate     | 🚧 In Progress |
-| Advanced         | ⏳ Upcoming     |
-
----
+**Beginner** → Week 1 (Fundamentals)
+↓
+**Intermediate** → Week 2 (Advanced Queries)
+↓
+**Advanced** → Week 3 (Production Features)
+↓
+**Expert** → Week 4 (Optimization & Best Practices)
 
 ## 🤝 Contributing
 
-Contributions, corrections, and suggestions are welcome!
+Feel free to:
+- Add more examples to existing days
+- Improve explanations
+- Fix errors
+- Add resources
+- Share your learnings
 
-1. Fork the repo
-2. Create a new branch (`git checkout -b feature/notes-update`)
-3. Commit your changes
-4. Push and open a Pull Request
+## ⭐ Key Takeaways
+
+| Topic | Key Point |
+|-------|-----------|
+| Indexing | #1 performance tool for MongoDB |
+| Data Modeling | Design for your query patterns |
+| Aggregation | Powerful alternative to application-level processing |
+| Replication | Essential for high availability |
+| Sharding | Enables unlimited horizontal scaling |
+| Profiling | Identify bottlenecks before they become critical |
+
+## 📖 Additional Resources
+
+- [MongoDB Official Documentation](https://docs.mongodb.com/)
+- [MongoDB University](https://university.mongodb.com/)
+- [MongoDB Community](https://www.mongodb.com/community)
+- [Stack Overflow MongoDB Tag](https://stackoverflow.com/questions/tagged/mongodb)
+
+## ⚖️ License
+
+This project is open source and available under the MIT License.
+
+## 🎯 Next Steps
+
+After completing the 30-day series:
+
+1. Build a real project with MongoDB
+2. Optimize performance for large datasets
+3. Implement replication and sharding
+4. Master the aggregation pipeline
+5. Explore advanced features like transactions and change streams
 
 ---
 
-## 📜 License
+**Started:** Day 1 ✨
+**Status:** 30 Days Complete! 🎉
+**Level:** Beginner → Expert
 
-This project is licensed under the **MIT License** — feel free to use and share.
-
----
-
-<div align="center">
-
-### ⭐ If these notes helped you, consider giving this repo a star!
-
-**Happy Coding! 🐍✨**
-— Sunny
-
-</div>
+Happy learning! 🚀
