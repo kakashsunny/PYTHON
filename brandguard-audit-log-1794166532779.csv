@@ -1,0 +1,4 @@
+ID,Time,ContentType,ViolationsCount,CriticalCount,Status,Score,Snippet
+"AUD-8821","10:45 AM today","Email",0,0,"Passed",100,"Quarterly investor dispatch: Review of portfolio yield updates..."
+"AUD-8820","09:15 AM today","Social Post",2,1,"Rejected",55,"Join our exclusive webinar! Get rich insights into algorithmic hedging..."
+"AUD-8819","Yesterday 4:20 PM","Ad Copy",1,0,"Warning",82,"Affordable cloud monitoring for high-growth engineering teams..."
